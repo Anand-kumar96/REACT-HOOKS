@@ -1,25 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { ReactDOM } from 'react';
+import React from 'react';
+// import HookCount from './components/HookCount';
+import HookCounterTwo from './components/HookCounterTwo';
+import HookCounterThree from './components/HookCounterThree';
+import HookCounterFour from './components/HookCounterFour';
+import HookCounterOne from './components/HookCounterOne';
+import UseEffectHookConditional from './components/UseEffectHookConditional';
+import HookMouse from './components/HookMouse';
+import HookMouseCleanUp from './components/HookMouseCleanUp';
+import IntervalHookCounter from './components/IntervalHookCounter';
+import DataFetch from './components/DataFetch';
+import UseContext1 from './components/UseContext1';
+import UseReducerOne from './components/UseReducerOne';
+import UseReducerTwo from './components/UseReducerTwo';
+import UseReducerThree from './components/UseReducerThree';
+import UseReducerFour from './components/UseReducerFour';
+import UseReducerFive from './components/UseReducerFive';
+export const UserContext=React.createContext();
+export const ChannelContext=React.createContext();
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ <div className='App'>
+  <>
+  <UseReducerFive/>
+  {/* <UseReducerFour/> */}
+  {/* <UseReducerThree/> */}
+  {/* <UseReducerTwo/> */}
+  {/* <UseReducerOne/> */}
+  {/* <UserContext.Provider value={'Anand'}>
+    <ChannelContext.Provider value={'Aryan'}>
+    <UseContext1/>
+    </ChannelContext.Provider>
+ 
+  </UserContext.Provider> */}
+  
+  {/* <DataFetch/> */}
+  {/* <IntervalHookCounter /> */}
+  {/* <HookMouseCleanUp/> */}
+  {/* <HookMouse/> */}
+  {/* <UseEffectHookConditional/> */}
+  {/* <HookCounterOne/> */}
+  {/* <HookCounterFour/> */}
+  {/* <HookCounterThree/> */}
+  {/* <HookCounterTwo/> */}
+  {/* <HookCount/> */}
+  </>
+ </div>
+  )
 }
 
 export default App;
