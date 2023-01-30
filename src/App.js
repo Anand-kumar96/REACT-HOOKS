@@ -17,13 +17,19 @@ import UseReducerTwo from './components/UseReducerTwo';
 import UseReducerThree from './components/UseReducerThree';
 import UseReducerFour from './components/UseReducerFour';
 import UseReducerFive from './components/UseReducerFive';
+import UseReducer from './components/UseReducer';
+import UseReducer2 from './components/UseReducer2';
+import UseReducer3 from './components/UseReducer3';
 export const UserContext=React.createContext();
 export const ChannelContext=React.createContext();
 function App() {
   return (
  <div className='App'>
   <>
-  <UseReducerFive/>
+  <UseReducer3/>
+  {/* <UseReducer2/> */}
+  {/* <UseReducer/> */}
+  {/* <UseReducerFive/> */}
   {/* <UseReducerFour/> */}
   {/* <UseReducerThree/> */}
   {/* <UseReducerTwo/> */}
