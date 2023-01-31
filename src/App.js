@@ -1,7 +1,7 @@
 import './App.css';
 import { ReactDOM } from 'react';
 import React from 'react';
-// import HookCount from './components/HookCount';
+import HookCount from './components/HookCount';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
@@ -22,13 +22,17 @@ import UseReducer2 from './components/UseReducer2';
 import UseReducer3 from './components/UseReducer3';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import ParentComponent from './components/ParentComponent';
+import UseMemo from './components/UseMemo';
 export const UserContext=React.createContext();
 export const ChannelContext=React.createContext();
 function App() {
   return (
  <div className='App'>
   <>
-  <DataFetchingTwo/>
+  <UseMemo/>
+  {/* <ParentComponent/> */}
+  {/* <DataFetchingTwo/> */}
   {/* <DataFetchingOne/> */}
   {/* <UseReducer3/> */}
   {/* <UseReducer2/> */}
