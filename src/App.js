@@ -20,13 +20,17 @@ import UseReducerFive from './components/UseReducerFive';
 import UseReducer from './components/UseReducer';
 import UseReducer2 from './components/UseReducer2';
 import UseReducer3 from './components/UseReducer3';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 export const UserContext=React.createContext();
 export const ChannelContext=React.createContext();
 function App() {
   return (
  <div className='App'>
   <>
-  <UseReducer3/>
+  <DataFetchingTwo/>
+  {/* <DataFetchingOne/> */}
+  {/* <UseReducer3/> */}
   {/* <UseReducer2/> */}
   {/* <UseReducer/> */}
   {/* <UseReducerFive/> */}
